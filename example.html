@@ -12,7 +12,7 @@
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.js"></script>
 	<script type="text/javascript" src="jquery.countdown.js"></script>
 	<script type="text/javascript">
-		$('.timer').countdown({
+		jQuery('.timer').countdown({
 			target: 'October 31, 2011',
 			parts: ['days', 'hours', 'minutes', 'seconds'],
 			separator: "full",
@@ -20,7 +20,7 @@
 			height: 180,
 			speed: 700,
 			ended: function (){
-				$('.timer').remove();
+				jQuery('.timer').remove();
 				alert("Ended");
 			}
 		});

@@ -23,7 +23,6 @@
 		ended: function(){
 
 		}
-		height: 180
 	}
 
 	var ticker_days = ['<ul>'],
