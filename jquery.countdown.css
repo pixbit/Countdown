@@ -1,49 +1,39 @@
 .timer {
-	color:#000;
-	font-size:120px;
-	font-weight:700;
-	margin-top:67px
-}
-
-.timer ul {
-	margin:0;
-	padding:0;
-	list-style:none;
-	overflow:visible;
-	height:180px
-}
-
-.timer .part-days,.timer .part-hours,.timer .part-minutes,.timer .part-seconds {
-	text-align:right;
-	margin:0;
-	padding:0;
-	float:left;
-	position:relative;
-	display:inline;
-	height:180px;
-	width:134px;
-	overflow:hidden
-}
-
-.timer .part-separator {
-	display:inline;
-	float:left;
-	margin:0;
-	padding:0
-}
-
-.timer ul li {
-	position: relative;
-}
-
-.timer ul li ul {
-	position:absolute
-}
-
-.timer ul ul li {
-	margin:0;
-	display:block;
-	clear:both;
-	width:134px;
-	height:180px
-}
+  font-family: 'geosanslightregular';
+  float: left;
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 225px;
+  margin-left: 75px; }
+  .timer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: visible;
+    height: 40px; }
+  .timer .part-days, .timer .part-hours, .timer .part-minutes, .timer .part-seconds {
+    text-align: left;
+    margin: 0;
+    padding: 0 5px 0 0;
+    float: left;
+    position: relative;
+    display: inline;
+    height: 40px;
+    width: 30px;
+    overflow: hidden; }
+  .timer .part-separator {
+    display: inline;
+    float: left;
+    margin: 0;
+    padding: 0 15px 0 0; }
+  .timer ul li {
+    position: relative; }
+  .timer ul li ul {
+    position: absolute; }
+  .timer ul ul li {
+    margin: 0;
+    display: block;
+    clear: both;
+    width: 30px;
+    height: 40px; }

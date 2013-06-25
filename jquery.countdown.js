@@ -64,7 +64,24 @@
 				{
 					timer.push('<li class="part-separator">'+defaults.separator+'</li>');
 				}else if(defaults.separator == "full"){
-					timer.push('<li class="part-separator">'+defaults.parts[i]+'</li>');
+					var tag = '';
+					switch(defaults.parts[i]){
+						case 'days':
+							tag = 'D';
+							break;
+						case 'hours':
+							tag = 'H';
+							break;
+						case 'minutes':
+							tag = 'MIN';
+							break;
+						case 'seconds':
+							tag = 'SEC';
+							break;
+						default:
+							tag = defaults.parts[i];
+					}
+					timer.push('<li class="part-separator">'+tag+'</li>');
 				}else if(defaults.separator == "short"){
 					timer.push('<li class="part-separator">'+defaults.parts[i].substring(0,1)+'</li>');
 				}

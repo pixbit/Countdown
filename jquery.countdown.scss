@@ -1,0 +1,58 @@
+$height : 40px;
+$topMargin : 75*3px;
+$leftMargin : 75px;
+$partPadding : 5px;
+$separatorPadding : 3*$partPadding;
+$width : 30px;
+$color : #fff;
+$fontSize : 28px;
+$fontWeight : 700;
+
+.timer {
+  font-family: 'geosanslightregular';
+  float: left;
+  color: $color;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  margin-top: $topMargin;
+  margin-left: $leftMargin;
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: visible;
+    height: $height;
+  }
+  .part-days,.part-hours,.part-minutes,.part-seconds {
+    text-align: left;
+    margin: 0;
+    padding: 0 $partPadding 0 0;
+    float: left;
+    position: relative;
+    display: inline;
+    height: $height;
+    width: $width;
+    overflow: hidden;
+  }
+  .part-separator {
+    display:inline;
+    float:left;
+    margin:0;
+    padding: 0 $separatorPadding 0 0;
+  }
+  ul li {
+    position: relative;
+  }
+  ul li ul {
+    position:absolute;
+  }
+  ul ul li {
+    margin:0;
+    display:block;
+    clear:both;
+    width:$width;
+    height:$height;
+  }
+}
+
+
